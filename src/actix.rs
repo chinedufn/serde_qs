@@ -99,7 +99,7 @@ where
 {
     type Error = ActixError;
     type Future = Ready<Result<Self, ActixError>>;
-    type Config = QsQueryConfig;
+    // type Config = QsQueryConfig;
 
     #[inline]
     fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {
